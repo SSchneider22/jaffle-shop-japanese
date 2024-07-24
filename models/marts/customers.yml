@@ -98,7 +98,7 @@ metrics:
       metrics:
         - count_lifetime_orders
         - lifetime_spend_pretax
-      expr: lifetime_spend_pretax / count_lifetime_orders
+      expr: lifetime_spend_pretax / count_lifetime_orders * 1.0
 
 saved_queries:
   - name: customer_order_metrics
