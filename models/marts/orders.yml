@@ -1,6 +1,6 @@
 models:
   - name: orders
-    description: Order overview data mart, offering key details for each order inlcluding if it's a customer's first order and a food vs. drink item breakdown. One row per order.
+    description: 注文概要データ マート。顧客の最初の注文かどうか、食べ物と飲み物の内訳など、各注文の重要な詳細を提供します。注文ごとに 1 行。
     data_tests:
       - dbt_utils.expression_is_true:
           expression: "order_items_subtotal = subtotal"
@@ -8,26 +8,26 @@ models:
           expression: "order_total = subtotal + tax_paid"
     columns:
       - name: order_id
-        description: The unique key of the orders mart.
+        description: プライマリキー
         data_tests:
           - not_null
           - unique
       - name: customer_id
-        description: The foreign key relating to the customer who placed the order.
+        description: 注文顧客と紐づける外部キー
         data_tests:
           - relationships:
               to: ref('stg_customers')
               field: customer_id
       - name: order_total
-        description: The total amount of the order in USD including tax.
+        description: 税込みの注文総額 (USD)
       - name: ordered_at
-        description: The timestamp the order was placed at.
+        description: 注文が行われたタイムスタンプ
       - name: order_cost
-        description: The sum of supply expenses to fulfill the order.
+        description: 注文を履行するための供給費の合計
       - name: is_food_order
-        description: A boolean indicating if this order included any food items.
+        description: この注文に食品が含まれているかどうかを示すブール値
       - name: is_drink_order
-        description: A boolean indicating if this order included any drink items.
+        description: この注文にドリンクアイテムが含まれているかどうかを示すブール値
 
 unit_tests:
   - name: test_order_items_compute_to_bools_correctly
