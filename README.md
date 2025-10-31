@@ -24,7 +24,7 @@ Ready to go? Grab some water and a nice snack, and let's dig in!
     - 基本的にSemantic Model関係の検証に使用しています
 - publicで公開していますが動作を保証しないため、ご注意ください
 - 注意点
-    - *:generate_schema_name.sqlを定義してマクロをカスタムしています。targetについて、開発環境は「dev」、本番環境は「prod」としてください**
+    - ** `generate_schema_name.sql`を定義してマクロをカスタムしています。targetについて、開発環境は「dev」、本番環境は「prod」としてください**
 
 ## Table of contents
 
