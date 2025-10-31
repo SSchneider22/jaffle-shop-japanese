@@ -21,8 +21,10 @@ Ready to go? Grab some water and a nice snack, and let's dig in!
 ## このリポジトリについて
 
 - jaffle-shopリポジトリをcloneして、labelやdescriptionを日本語化しての検証用dbt projectです
- - 基本的にSemantic Model関係の検証に使用しています
+    - 基本的にSemantic Model関係の検証に使用しています
 - publicで公開していますが動作を保証しないため、ご注意ください
+- 注意点
+    - *:generate_schema_name.sqlを定義してマクロをカスタムしています。targetについて、開発環境は「dev」、本番環境は「prod」としてください**
 
 ## Table of contents
 
