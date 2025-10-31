@@ -1,5 +1,13 @@
 # 🥪 The Jaffle Shop 🦘
 
+## このリポジトリについて
+
+- jaffle-shopリポジトリをcloneして、labelやdescriptionを日本語化しての検証用dbt projectです
+    - 基本的にSemantic Model関係の検証に使用しています
+- publicで公開していますが動作を保証しないため、ご注意ください
+- 注意点
+    - ** `generate_schema_name.sql`を定義してマクロをカスタムしています。targetについて、開発環境は「dev」、本番環境は「prod」としてください**
+
 This is a sandbox project for exploring the basic functionality and latest features of dbt. It's based on a fictional restaurant called the Jaffle Shop that serves [jaffles](https://en.wikipedia.org/wiki/Pie_iron).
 
 This README will guide you through setting up the project on dbt Cloud. Working through this example should give you a good sense of how dbt Cloud works and what's involved with setting up your own project. We'll also _optionally_ cover some intermediate topics like setting up Environments and Jobs in dbt Cloud, working with a larger dataset, and setting up pre-commit hooks if you'd like.
@@ -17,14 +25,6 @@ Ready to go? Grab some water and a nice snack, and let's dig in!
    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/a90b383eea594a0ea41e91af394b2811-with-play.gif">
  </a>
 </div>
-
-## このリポジトリについて
-
-- jaffle-shopリポジトリをcloneして、labelやdescriptionを日本語化しての検証用dbt projectです
-    - 基本的にSemantic Model関係の検証に使用しています
-- publicで公開していますが動作を保証しないため、ご注意ください
-- 注意点
-    - ** `generate_schema_name.sql`を定義してマクロをカスタムしています。targetについて、開発環境は「dev」、本番環境は「prod」としてください**
 
 ## Table of contents
 
