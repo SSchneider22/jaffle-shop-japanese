@@ -32,5 +32,10 @@ models:
   jaffle_shop:
     staging:
       +materialized: view
+      +schema: staging
     marts:
       +materialized: table
+      +schema: mart
+    omni_dbt_push:
+      +materialized: table
+      +schema: omni_dbt_push
