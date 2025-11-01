@@ -15,8 +15,10 @@ models:
               field: customer_id
       - name: order_total
         description: 税込みの注文総額 (USD)
-      - name: purchased_at
+      - name: ordered_at
         description: 注文が行われたタイムスタンプ
+      # - name: purchased_at
+      #   description: 注文が行われたタイムスタンプ
       - name: order_cost
         description: 注文を履行するための供給費の合計
       - name: is_food_order
