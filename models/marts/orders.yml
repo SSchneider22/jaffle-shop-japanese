@@ -1,6 +1,6 @@
 models:
   - name: orders
-    description: 注文概要データ マート。顧客の最初の注文かどうか、食べ物と飲み物の内訳など、各注文の重要な詳細を提供します。注文ごとに 1 行。
+    description: 注文概要データマート 。顧客の最初の注文かどうか、食べ物と飲み物の内訳など、各注文の重要な詳細を提供します。注文ごとに 1 行。
     columns:
       - name: order_id
         description: プライマリキー
