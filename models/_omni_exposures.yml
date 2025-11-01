@@ -1,0 +1,22 @@
+---
+version: 2
+exposures:
+- name: "20251020_test"
+  label: "20251020_test"
+  type: "dashboard"
+  url: "https://partnerclassmethod.omniapp.co/dashboards/18013afa"
+  depends_on:
+  - "ref('orders')"
+  owner:
+    name: "Creator相樂"
+    email: "sagara.satoshi+omni_creator@classmethod.jp"
+- name: "__KPI_______"
+  label: "売上KPIダッシュボード"
+  type: "dashboard"
+  url: "https://partnerclassmethod.omniapp.co/dashboards/51e24001"
+  depends_on:
+  - "ref('customers')"
+  - "ref('orders')"
+  owner:
+    name: "相樂悟（SAGARA Satoshi）"
+    email: "sagara.satoshi@classmethod.jp"
