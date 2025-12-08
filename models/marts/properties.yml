@@ -1,0 +1,12 @@
+models:
+- name: products
+  description: 販売されている商品の詳細情報を持つマスタテーブル
+  columns:
+  - name: dim_is_drink
+    description: 飲み物かどうかの真偽値
+  - name: dim_is_food
+    description: 食べ物かどうかの真偽値
+  - name: dim_product_name
+    description: '商品の具体的な名前（例: "nutellaphone who dis?"）'
+  - name: dim_product_type
+    description: '商品の分類（jaffle: サンドウィッチ, beverage: ドリンク）'
