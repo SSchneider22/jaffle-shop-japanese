@@ -26,6 +26,8 @@ models:
       - name: is_drink_order
         description: この注文にドリンクアイテムが含まれているかどうかを示すブール値
 
+      - name: location_id
+        description: 都市情報を管理するID
 unit_tests:
   - name: test_order_items_compute_to_bools_correctly
     description: "Test that the counts of drinks and food orders convert to booleans properly."
