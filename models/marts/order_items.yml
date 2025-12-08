@@ -36,6 +36,19 @@ models:
 #         - { order_id: 2, product_id: 2, supply_cost: 8.50 }
 #         - { order_id: 2, product_id: 2, supply_cost: 8.50 }
 
+    description: 個々の商品購入ごとのトランザクション明細テーブル
+      - name: dim_date
+        description: 商品が購入された日付
+      - name: dim_month
+        description: 購入された月（1-12）
+      - name: dim_year
+        description: 購入された年
+      - name: f_cost
+        description: 商品の調達原価
+      - name: f_profit
+        description: 商品単体での粗利益
+      - name: f_sales
+        description: 値引き前の商品単価
 semantic_models:
   - name: order_item
     defaults:
